@@ -11,7 +11,7 @@ export type { Markdown, MDX, ImageFieldData, IsoDateTimeString }
 export type Post = {
   /** File path relative to `contentDirPath` */
   _id: string
-  _raw: Local.RawDocumentData
+  _raw: Local
   type: 'Post'
   title: string
   date: string

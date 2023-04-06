@@ -1,5 +1,5 @@
 const metadata = {
-    title: "My Blog",
+    title: "develop print",
 };
 
 export default metadata;
