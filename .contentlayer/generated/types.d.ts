@@ -11,7 +11,7 @@ export type { Markdown, MDX, ImageFieldData, IsoDateTimeString }
 export type Post = {
   /** File path relative to `contentDirPath` */
   _id: string
-  _raw: Local
+  _raw: Local.RawDocumentData
   type: 'Post'
   title: string
   date: string
@@ -35,11 +35,6 @@ export type DocumentTypeNames = 'Post'
 export type NestedTypes = never
 export type NestedTypeNames = never
 
-export type DataExports = {
-  allDocuments: DocumentTypes[]
-  allPosts: Post[]
-}
-
 
 export interface ContentlayerGenTypes {
   documentTypes: DocumentTypes
@@ -49,7 +44,6 @@ export interface ContentlayerGenTypes {
   nestedTypeMap: NestedTypeMap
   nestedTypeNames: NestedTypeNames
   allTypeNames: AllTypeNames
-  dataExports: DataExports
 }
 
 declare global {
